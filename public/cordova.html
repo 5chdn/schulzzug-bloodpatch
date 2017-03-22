@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="google-site-verification" content="9vjy4bcMHmIAr-wnr6ZYnWoAc0fRv9BMcH-XWdB5270" />
+	<title>@Schulzzug</title>
+    <style type="application/css">
+        body {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+        }
+        canvas {
+            width:375px;
+            height:667px;
+            margin:auto;
+            display:inline;
+            position:absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            font-family: 'SilkScreen', Monaco, monospace;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="font.css" />
+    <style type="application/css">
+    .nocursor { cursor:none; }
+    </style>
+</head>
+<body id="phaser-game" bgcolor="#000000" style="margin: 0; padding: 0;">
+<script type="application/javascript">
+    document.getElementById('phaser-game').style.cursor = 'none';
+</script>
+    <script type="application/javascript" src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script type="application/javascript" src="js/firebase.js"></script>
+    <script type="application/javascript" src="js/swipe.js"></script>
+    <script type="application/javascript" src="js/phaser.min.js"></script>
+    <script type="application/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="application/javascript" src="js/game_parameters.js"></script>
+    <script type="application/javascript">
+        is_android = true;
+    </script>
+    <script type="application/javascript" src="js/schulzzug_core.js"></script>
+    <script type="application/javascript" src="js/levels.js"></script>
+    <script type="application/javascript" src="js/boot.js"></script>
+    <script type="application/javascript" src="js/load.js"></script>
+    <script type="application/javascript" src="js/pausemenu.js"></script>
+    <script type="application/javascript" src="js/coinsubmission.js"></script>
+    <script type="application/javascript" src="js/menu.js"></script>
+    <script type="application/javascript" src="js/end.js"></script>
+    <script type="application/javascript" src="js/game.js"></script>
+    <script type="application/javascript" src="js/retina.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93100271-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null",
+    "connections": {
+
+    },
+    "stats": {
+      ".read": "auth != null",
+      ".write": false
+    },
+    "game_results": {
+      ".read": false,
+      "score": {
+        ".validate": "newData.isNumber() && newData.val() >= 0"
+      },
+      "distance": {
+        ".validate": "newData.isNumber() && newData.val() >= 0"
+      },
+      "timestamp": {
+        ".validate": "newData.val() <= now"
+      }
+    }
+  }
+}
